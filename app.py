@@ -34,8 +34,27 @@ car_class = st.sidebar.selectbox("choose a Class", car_classes)  # and the selec
 show_means = st.sidebar.radio(
     label='Show Class Means', options=['Yes', 'No'])
 
+models = ['linear']
+model = st.sidebar.selectbox("Fit a model", models)  # and the selection of the class.
+
 st.subheader(f'Fuel efficiency vs. engine displacement for {year}')
 
+############ add by me ##############
+#import statsmodels.formula.api as smf
+
+#def fit_and_predict(df):
+#    # fit a model explaining hwy fuel mileage through displacement
+#    lm = smf.ols(formula="hwy ~ displ", data=df).fit()
+    
+#    # find two points on the line represented by the model
+#    x_bounds = [df['displ'].min(), df['displ'].max()]
+#    preds_input = pd.DataFrame({'displ': x_bounds})
+#    predictions = lm.predict(preds_input)
+#    return lm, pd.DataFrame({'displ': x_bounds, 'hwy': predictions})
+
+#lm, pred = fit_and_predict(mpg_df)
+#rsquared = lm.rsquared
+##################################################
 
 # With these functions we wrangle the data and plot it.
 def mpg_mpl(year, car_class, show_means):
@@ -52,7 +71,7 @@ def mpg_mpl(year, car_class, show_means):
         means = df.groupby('class').mean(numeric_only=True)
         for cc in means.index:
             ax.plot(means.loc[cc, 'displ'], means.loc[cc, 'hwy'], marker='.', linestyle='', ms=12, alpha=1, label=cc)
-        ax.legend(loc='upper right', bbox_to_anchor=(1.1, 1))
+        ax.legend(loc='upper right', bbox_to_anchor=(1.1, 1))    
     ax.set_xlim([1, 8])
     ax.set_ylim([10, 50])
     plt.close()
