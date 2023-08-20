@@ -1,6 +1,6 @@
 # Twitter Streamlit App
 
-#### -- Project Status: [Completed]
+#### -- Project Status: [....]
 
 ## Project Intro/Objective
 Use the Twitter API to access Twitter data. Find the most frequently used hashtags. Choose 5 famous American celebrities, analyze their twitter usage (e.g. number of tweets, retweets, when tweet during the day, etc.) and compare the results to Elon Musk’s Twitter account.
