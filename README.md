@@ -1,13 +1,5 @@
 # Twitter Streamlit App
 
-## Objective
-
-example image:
-
-
-![alternative text](reports/img/pic01.jpg)
-
-
 #### -- Project Status: [Completed]
 
 ## Project Intro/Objective
