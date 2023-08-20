@@ -1,4 +1,6 @@
-# Project Name
+# Twitter Streamlit App
+
+## Objective
 
 example image:
 
@@ -6,16 +8,14 @@ example image:
 ![alternative text](reports/img/pic01.jpg)
 
 
-#### -- Project Status: [Active, On-Hold, Completed]
+#### -- Project Status: [Completed]
 
 ## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project. Limit to a short paragraph, 3-6 Sentences)
+Use the Twitter API to access Twitter data. Find the most frequently used hashtags. Choose 5 famous American celebrities, analyze their twitter usage (e.g. number of tweets, retweets, when tweet during the day, etc.) and compare the results to Elon Musk’s Twitter account.
 
 ### Partner
 * [Name of Partner organization/Government department etc..]
-* Website for partner
-* Partner contact: [Name of Contact]
-* If you do not have a partner leave this section out
+
 
 ### Methods Used
 * Inferential Statistics
@@ -25,14 +25,9 @@ The purpose of this project is ________. (Describe the main goals of the project
 * etc.
 
 ### Technologies
-* R
 * Python
-* D3
-* PostGres, MySql
 * Pandas, jupyter
-* HTML
-* JavaScript
-* etc.
+
 
 ## Project Description
 (Provide more detailed overview of the project.
